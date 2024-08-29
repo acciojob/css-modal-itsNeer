@@ -1,31 +1,56 @@
-/*  your css code here. If applicable */
-#openModal{
-	padding: 10px 20px;
-	margin: 20px;
-	cursor: pointer;
+/* Basic styling for body */
+body {
+    font-family: Arial, sans-serif;
 }
-.modal{
-	display: none;
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0,0,0,0.3);
-	overflow: hidden;
+
+/* Button Styling */
+#openModal {
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
-.modal-header{
-	background-color: green;
-	color: white;
-	padding: 10px 15px;
-	display: flex;
-	justify-center: space-between;
-	align-items: center;
+
+/* Modal Background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black with opacity */
 }
-.close-modal{
-	cursor: pointer;
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 0;
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
-.modal-body{
-	padding: 15px;
+
+/* Modal Header */
+.modal-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Close Button */
+.close-modal {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 15px;
 }
